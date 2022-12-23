@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>
+        home
+    </title>
+</head>
+
+<body>
+    <%console.log(temp)%>
+    <%if (!temp) { %>
+        <li><a href="/login">Sign in</a></li>
+        <li><a href="/index">Sign Up</a></li>
+        <% }else{ %>
+            <a href="/logout">log out</a>
+            <%}%>
+
+                    <% docs.forEach(function(data){%>
+                        <h1>
+                            <%=data.nameup%>
+                        </h1>
+                        <h1>
+                            <%=data.tag%>
+                        </h1>
+                        <h1>
+                            <%=data.link%>
+                        </h1>
+
+                        <%})%>
+</body>
+
+</html>
